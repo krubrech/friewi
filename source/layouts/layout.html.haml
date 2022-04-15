@@ -1,0 +1,21 @@
+!!!
+%html{:lang => "en-us"}
+  %head
+    / Meta
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %title Verse Kiwis
+    %meta{:content => "", :name => "description"}/
+    / The compiled CSS file
+    %link{:href => "stylesheets/all.css", :rel => "stylesheet"}/
+    / Web fonts
+    %link{:href => "https://fonts.googleapis.com/css?family=Karla:400,700", :rel => "stylesheet"}/
+    / favicon.ico. Place these in the root directory.
+    / %link{:href => "favicon.ico", :rel => "shortcut icon"}/
+    / Scroll reveal
+    %script{:src => "https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"}
+    / The compiled JavaScript file
+    / %script{:src => "javascripts/main.js"}
+  %body.has-animations
+    = yield
