@@ -18,11 +18,11 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 page "/admin/*", layout: false
 
-activate :blog do |blog|
-  blog.permalink = "news/{year}/{title}.html"
-  blog.sources = "posts/{title}.html"
-  blog.layout = "news-detail"
-end
+# activate :blog do |blog|
+#   blog.permalink = "news/{year}/{title}.html"
+#   blog.sources = "posts/{title}.html"
+#   blog.layout = "news-detail"
+# end
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
