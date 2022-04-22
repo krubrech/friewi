@@ -36,12 +36,23 @@
 #gallery {
     grid-gap: 10px;
     display: grid;
-    grid-template-columns: 1fr .5fr .5fr;
+    grid-template-columns: 1fr 1fr 1fr;
     position: relative;
     width: 100%;
 
     figure:first-child {
         grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    figure:nth-child(5) {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    figure:nth-child(7) {
+        grid-row: span 2;
+        grid-column: span 2;
     }
 
 
