@@ -29,3 +29,27 @@
 
 // Utilities
 @import "utilities";
+
+//Customs;
+
+//Gallery
+//
+#gallery {
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr .5fr .5fr;
+    position: relative;
+    width: 100%;
+
+    a:first-child {
+        grid-row: span 2;
+    }
+
+    a {
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+}

@@ -9,6 +9,7 @@
     %meta{:content => "", :name => "description"}/
     / The compiled CSS file
     %link{:href => "stylesheets/all.css", :rel => "stylesheet"}/
+    %link{:href => "stylesheets/vendor/photoswipe.css", :rel => "stylesheet"}/
     / Web fonts
     %link{:href => "https://fonts.googleapis.com/css?family=Karla:400,700", :rel => "stylesheet"}/
     / favicon.ico. Place these in the root directory.
@@ -16,6 +17,21 @@
     / Scroll reveal
     %script{:src => "https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"}
     / The compiled JavaScript file
-    / %script{:src => "javascripts/main.js"}
+    -# %script{:src => "javascripts/vendor/photoswipe.esm.min.js"}
+    -# %script{:src => "javascripts/vendor/photoswipe-lightbox.esm.min.js"}
+    -# %script{:src => "javascripts/main.js"}
+    %script{type: 'module'}
+      :plain
+        import PhotoSwipeLightbox from '/javascripts/vendor/photoswipe-lightbox.esm.min.js';
+        import PhotoSwipe from '/javascripts/vendor/photoswipe.esm.min.js';
+
+        const lightbox = new PhotoSwipeLightbox({
+          gallery: '#gallery',
+          children: 'a',
+          pswpModule: PhotoSwipe
+        });
+
+        lightbox.init();
+
   %body.has-animations
     = yield

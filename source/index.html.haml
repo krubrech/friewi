@@ -10,48 +10,46 @@ title: Verse Kiwis in Nieuw Zeeland
 / Body
 %main
   .container
+    // Gallery
+    %section
+      #gallery.pswp-gallery.pswp-gallery--single-column
+        - sitemap.resources.each do |upload|
+          - if upload.path.start_with?("images/uploads/")
+            - width, height = FastImage.size(File.join(__dir__,upload.path))
+            %figure
+              %a{"data-pswp-height" => height, "data-pswp-width" => width, :href => upload.url, :target => "_blank"}
+                %img{:alt => "", :src => upload.url}/
     / Info
     %section.grid-row.grid-row--center
       / Cabin
-      .grid-column.span-half.pt3.pb3.mobile-m.order-1.reveal-on-scroll.is-revealing
-        .relative
-          %img.info-image.relative.z2{:alt => "Cabin", :src => "/images/cabin.jpg"}/
-          .pattern.pattern--left-down.absolute.z1
-      .grid-column.span-half.pt3.pb3.mobile-m.order-2
-        %h3 Cabin
-        %p Illa argumenta propria videamus, cur omnia sint paria peccata. Quamquam te quidem video minime esse deterritum. Beatus sibi videtur esse moriens. In qua quid est boni praeter summam voluptatem.
-      / Teepees
-      .grid-column.span-half.pt3.pb3.mobile-m.order-4
-        %h3 Teepees
-        %p A quibus propter discendi cupiditatem videmus ultimas terras esse peragratas. Laelius clamores sofòw ille so lebat Edere compellans gumias ex ordine nostros.
-      .grid-column.span-half.pt3.pb3.mobile-m.order-3.reveal-on-scroll.is-revealing
-        .relative
-          %img.info-image.relative.z2{:alt => "Teepee", :src => "/images/teepee.jpg"}/
-          .pattern.pattern--right-middle.absolute.z1
-      / Fishing
-      .grid-column.span-half.pt3.pb3.mobile-m.order-5.reveal-on-scroll.is-revealing
-        .relative
-          %img.info-image.relative.z2{:alt => "Fishing", :src => "/images/fishing.jpg"}/
-          .pattern.pattern--left-up.absolute.z1
-      .grid-column.span-half.pt3.pb3.mobile-m.order-6
-        %h3 Fishing
-        %p Que Manilium, ab iisque M. Intellegi quidem, ut propter aliam quampiam rem, verbi gratia propter voluptatem, nos amemus; An eum locum libenter invisit ultimas.
-      / Archery
-      .grid-column.span-half.pt3.pb3.mobile-m.order-8
-        %h3 Archery
-        %p At ille pellit, qui permulcet sensum voluptate. Quid in isto egregio tuo officio et tanta fide-sic enim existimo-ad corpus refers? Nec vero sum nescius esse utilitatem in historia.
-      .grid-column.span-half.pt3.pb3.mobile-m.order-7.reveal-on-scroll.is-revealing
-        .relative
-          %img.info-image.relative.z2{:alt => "Archery", :src => "/images/archery.jpg"}/
-          .pattern.pattern--right-down.absolute.z1
-      / Canoeing
-      .grid-column.span-half.pt3.pb3.mobile-m.order-9.reveal-on-scroll.is-revealing
-        .relative
-          %img.info-image.relative.z2{:alt => "Canoeing", :src => "/images/canoeing.jpg"}/
-          .pattern.pattern--left-middle.absolute.z1
-      .grid-column.span-half.pt3.pb3.mobile-m.order-10
-        %h3 Canoeing
-        %p Nam si propter voluptatem, quae est ista laus, quae possit e macello peti? Sin te auctoritas commovebat, nobisne omnibus et Platoni ipsi nescio quem illum anteponebas.
+      - blog.articles.each_with_index do |article, index|
+        - left = (index % 2 == 0)
+        - if left
+          .grid-column.span-half.pt3.pb3.mobile-m.order-1
+            .relative
+              - if article.data.image
+                = link_to article do
+                  = image_tag article.data.image, class: 'info-image relative z2', alt: article.data.title
+                  .pattern.pattern--left-down.absolute.z1
+          .grid-column.span-half.pt3.pb3.mobile-m.order-2
+            = link_to article do
+              %h3=  article.data.title
+            %p= article.data.description
+            %br
+            %p= article.date.strftime('%e %b %Y')
+        - else
+          .grid-column.span-half.pt3.pb3.mobile-m.order-4
+            = link_to article do
+              %h3=  article.data.title
+            %p= article.data.description
+            %br
+            %p= article.date.strftime('%e %b %Y')
+          .grid-column.span-half.pt3.pb3.mobile-m.order-3.reveal-on-scroll.is-revealing
+            .relative
+              - if article.data.image
+                = link_to article do
+                  = image_tag article.data.image, class: 'info-image relative z2', alt: article.data.title
+                  .pattern.pattern--right-middle.absolute.z1
 / Footer
 %footer.pt2.pb2
   .container.align--center
