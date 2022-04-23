@@ -1,65 +1,44 @@
 ---
 title: Verse Kiwis in Nieuw Zeeland
 ---
-/ Header
-%header.pt2.pb1.align--center
-  .container
-    %p Verse Kiwis
-    %h1{:title => "Verse Kiwis"}
-      %img.logo{:alt => "Verse Kiwis", :src => "/images/logo.svg"}/
-/ Body
-%main
-  .container
-    // Gallery
-    %section
-      #gallery.pswp-gallery.pswp-gallery--single-column
-        - sitemap.resources.each do |upload|
-          - if upload.path.start_with?("images/uploads/")
-            - width, height = FastImage.size(File.join(__dir__,upload.path))
-            %figure
-              %a{"data-pswp-height" => height, "data-pswp-width" => width, :href => upload.url, :target => "_blank"}
-                %img{:alt => "", :src => upload.url}/
-    / Info
-    %section.grid-row.grid-row--center
-      / Cabin
-      - blog.articles.each_with_index do |article, index|
-        - left = (index % 2 == 0)
-        - if left
-          .grid-column.span-half.pt3.pb3.mobile-m.order-1
-            .relative
-              - if article.data.image
-                = link_to article do
-                  = image_tag article.data.image, class: 'info-image relative z2', alt: article.data.title
-                  .pattern.pattern--left-down.absolute.z1
-          .grid-column.span-half.pt3.pb3.mobile-m.order-2
+// Gallery
+%section
+  #gallery.pswp-gallery.pswp-gallery--single-column
+    - sitemap.resources.each do |upload|
+      - if upload.path.start_with?("images/uploads/")
+        - width, height = FastImage.size(File.join(__dir__,upload.path))
+        %figure
+          %a{"data-pswp-height" => height, "data-pswp-width" => width, :href => upload.url, :target => "_blank"}
+            %img{:alt => "", :src => upload.url}/
+/ Info
+%section.grid-row.grid-row--center
+  / Cabin
+  - blog.articles.each_with_index do |article, index|
+    - left = (index % 2 == 0)
+    - if left
+      .grid-column.span-half.pt3.pb3.mobile-m.order-1
+        .relative
+          - if article.data.image
             = link_to article do
-              %h3=  article.data.title
-            %p= article.data.description
-            %br
-            %p= article.date.strftime('%e %b %Y')
-        - else
-          .grid-column.span-half.pt3.pb3.mobile-m.order-4
+              = image_tag article.data.image, class: 'info-image relative z2', alt: article.data.title
+              .pattern.pattern--left-down.absolute.z1
+      .grid-column.span-half.pt3.pb3.mobile-m.order-2
+        = link_to article do
+          %h3=  article.data.title
+        %p= article.data.description
+        %br
+        %p= article.date.strftime('%e %b %Y')
+    - else
+      .grid-column.span-half.pt3.pb3.mobile-m.order-4
+        = link_to article do
+          %h3=  article.data.title
+        %p= article.data.description
+        %br
+        %p= article.date.strftime('%e %b %Y')
+      .grid-column.span-half.pt3.pb3.mobile-m.order-3.reveal-on-scroll.is-revealing
+        .relative
+          - if article.data.image
             = link_to article do
-              %h3=  article.data.title
-            %p= article.data.description
-            %br
-            %p= article.date.strftime('%e %b %Y')
-          .grid-column.span-half.pt3.pb3.mobile-m.order-3.reveal-on-scroll.is-revealing
-            .relative
-              - if article.data.image
-                = link_to article do
-                  = image_tag article.data.image, class: 'info-image relative z2', alt: article.data.title
-                  .pattern.pattern--right-middle.absolute.z1
-/ Footer
-%footer.pt2.pb2
-  .container.align--center
-    %p
-    %p
-      %a.link{:href => "https://www.codecanoe.com"} CodeCanoe.
-    %ul.no-bullets.list--inline.mt1
-      %li
-        %a.link{:href => "https://www.instagram.com"}
-          %img.icon{:alt => "Instagram", :src => "/images/instagram.svg"}/
-    %p
-
+              = image_tag article.data.image, class: 'info-image relative z2', alt: article.data.title
+              .pattern.pattern--right-middle.absolute.z1
 

@@ -3,7 +3,7 @@
 // Make stuff responsive
 img, canvas, iframe, video, svg { max-width: 100%; }
 
-.logo { width: 385px; }
+.logo { height: 200px; }
 
 .info-image {
     @media screen and (min-width: $breakpoint--md) {

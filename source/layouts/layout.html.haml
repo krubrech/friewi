@@ -9,8 +9,8 @@
     %title Verse Kiwis
     %meta{:content => "", :name => "description"}/
     / The compiled CSS file
-    %link{:href => "stylesheets/all.css", :rel => "stylesheet"}/
-    %link{:href => "stylesheets/vendor/photoswipe.css", :rel => "stylesheet"}/
+    %link{:href => "/stylesheets/all.css", :rel => "stylesheet"}/
+    %link{:href => "/stylesheets/vendor/photoswipe.css", :rel => "stylesheet"}/
     / Web fonts
     %link{:href => "https://fonts.googleapis.com/css?family=Karla:400,700", :rel => "stylesheet"}/
     / favicon.ico. Place these in the root directory.
@@ -35,4 +35,26 @@
         lightbox.init();
 
   %body.has-animations
-    = yield
+    / Header
+    %header.pt2.pb1.align--center
+      .container
+        %a{href: "/"}
+          %div{style: 'display: flex; justify-content: space-between; align-items: center;'}
+            %h1 Verse Kiwis
+            %img.logo{:alt => "Verse Kiwis", :src => "/images/kiwi.jpg"}/
+    / Body
+    %main
+      .container
+        = yield
+
+    / Footer
+    %footer.pt2.pb2
+      .container.align--center
+        %p
+          %a.link{:href => "https://www.codecanoe.com"} CodeCanoe.
+        %ul.no-bullets.list--inline.mt1
+          %li
+            %a.link{:href => "https://www.instagram.com"}
+              %img.icon{:alt => "Instagram", :src => "/images/instagram.svg"}/
+        %p
+

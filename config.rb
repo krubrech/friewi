@@ -21,7 +21,7 @@ page "/admin/*", layout: false
 activate :blog do |blog|
   blog.permalink = "blog/{title}.html"
   blog.sources = "posts/{title}.html"
-  # blog.layout = "news-detail"
+  blog.layout = "layout"
 end
 
 # With alternative layout
