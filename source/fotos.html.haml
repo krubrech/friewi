@@ -1,5 +1,5 @@
 %section
-  #gallery.pswp-gallery.pswp-gallery--single-column
+  #gallery
     - sitemap.resources.select { |upload| upload.path.start_with?("images/uploads/") }.each_with_index do |upload|
       - width, height = FastImage.size(File.join(__dir__,upload.path))
       %figure
