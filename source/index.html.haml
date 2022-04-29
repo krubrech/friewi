@@ -2,15 +2,19 @@
 title: Verse Kiwis in Nieuw Zeeland
 ---
 // Gallery
+%h3 Gallerij
 %section
   #gallery.pswp-gallery.pswp-gallery--single-column
-    - sitemap.resources.each do |upload|
-      - if upload.path.start_with?("images/uploads/")
+    - sitemap.resources.select { |upload| upload.path.start_with?("images/uploads/") }.each_with_index do |upload,index|
+      - if index < 12
         - width, height = FastImage.size(File.join(__dir__,upload.path))
         %figure
           %a{"data-pswp-height" => height, "data-pswp-width" => width, :href => upload.url, :target => "_blank"}
             %img{:alt => "", :src => upload.url}/
+= link_to "Alle fotos ...", '/fotos'
 / Info
+%br
+%h3.pt3 Blog
 %section.grid-row.grid-row--center
   / Cabin
   - blog.articles.each_with_index do |article, index|
@@ -22,20 +26,20 @@ title: Verse Kiwis in Nieuw Zeeland
             = link_to article do
               = image_tag article.data.image, class: 'info-image relative z2', alt: article.data.title
               .pattern.pattern--left-down.absolute.z1
-      .grid-column.span-half.pt3.pb3.mobile-m.order-2
+      .grid-column.span-half.pt3.pb3.mobile-m.order-2.pl1
         = link_to article do
-          %h3=  article.data.title
+          %h4=  article.data.title
         %p= article.data.description
         %br
         %p= article.date.strftime('%e %b %Y')
     - else
       .grid-column.span-half.pt3.pb3.mobile-m.order-4
         = link_to article do
-          %h3=  article.data.title
+          %h4=  article.data.title
         %p= article.data.description
         %br
         %p= article.date.strftime('%e %b %Y')
-      .grid-column.span-half.pt3.pb3.mobile-m.order-3.reveal-on-scroll.is-revealing
+      .grid-column.span-half.pt3.pb3.mobile-m.order-3.reveal-on-scroll.is-revealing.pr1
         .relative
           - if article.data.image
             = link_to article do
