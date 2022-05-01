@@ -18,17 +18,20 @@ echo "These are the filenames to be synced"
 
 echo $FILENAMES
 
-$DOWNLOAD_URI="https://192.168.1.173:5001/mo/sharing/webapi/entry.cgi/"
+DOWNLOAD_URI="https://192.168.1.173:5001/mo/sharing/webapi/entry.cgi/"
 
 for FILE in $FILENAMES
 do
   echo "Checking File: $FILE"
-  EXPANDED_FILE="/home/klaus/personal/versekiwis/source/images/uploads/$FILE"
+  DIRECTORY="/home/klaus/personal/versekiwis/source/images/uploads/"
+  EXPANDED_FILE="$DIRECTORY$FILE"
   if test -f "$EXPANDED_FILE"; then
     echo "$EXPANDED_FILE Already exists."
   else
   echo "Downloaded File: $FILE"
-    wget "$DOWNLOAD_URI$FILE" -o $EXPANDED_FILE
+  scp klaus@192.168.1.173:/volume1/photo/Klaus\\\ GSM\\\ Backup/DCIM/Camera/$FILE $DIRECTORY
+  scp klaus@192.168.1.173:/volume1/photo/Sarah\\\ GSM\\\ Backup/DCIM/Camera/$FILE $DIRECTORY
+    # wget "$DOWNLOAD_URI$FILE" --no-check-certificate -P $DIRECTORY
   fi
 done
 
