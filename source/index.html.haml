@@ -6,12 +6,13 @@ title: Verse Kiwis in Nieuw Zeeland
 %section
   #gallery.pswp-gallery.pswp-gallery--single-column
     - sitemap.resources.select { |upload| upload.path.start_with?("images/uploads/") }.each_with_index do |upload,index|
-      - if index < 12
+      - if index < 11
         - width, height = FastImage.size(File.join(__dir__,upload.path))
         %figure
           %a{"data-pswp-height" => height, "data-pswp-width" => width, :href => upload.url, :target => "_blank"}
             %img{:alt => "", :src => upload.url}/
-= link_to "Alle fotos ...", '/fotos'
+.pt1
+  = link_to "Alle fotos ...", '/fotos'
 / Info
 %br
 %h3.pt3 Blog
