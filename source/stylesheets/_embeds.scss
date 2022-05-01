@@ -11,6 +11,12 @@ img, canvas, iframe, video, svg { max-width: 100%; }
     }
 }
 
+.blog-image {
+  object-fit: cover;
+  width: 350px;
+  height: 350px;
+}
+
 .icon {
     height: 35px;
     width: 35px;
