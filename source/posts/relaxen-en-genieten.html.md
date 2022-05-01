@@ -2,7 +2,7 @@
 title: Relaxen en genieten
 date: 2022-04-29T09:32:41.354Z
 description: Onze eerste, zeer aangename kennismaking met Nieuw-Zeeland
-image: /images/uploads/img-20220407-wa0007.jpg
+image: /images/uploads/20220405_180348.jpg
 ---
 Ondanks het serieus stressy vertrek, raakten we op tijd in ons vliegtuig.
 Na 27 lange uren vliegen - yes, WE MADE IT! 
