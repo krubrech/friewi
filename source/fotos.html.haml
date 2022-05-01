@@ -1,6 +1,6 @@
 %section
   #gallery
-    - sitemap.resources.select { |upload| upload.path.start_with?("images/uploads/") }.each_with_index do |upload|
+    - sitemap.resources.select { |upload| upload.path.start_with?("images/uploads/") }.reverse.each_with_index do |upload|
       - width, height = FastImage.size(File.join(__dir__,upload.path))
       %figure
         %a{"data-pswp-height" => height, "data-pswp-width" => width, :href => upload.url, :target => "_blank"}
