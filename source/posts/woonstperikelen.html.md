@@ -10,7 +10,7 @@ Twee à drie maand voor ons vertrek keken we al dagelijks op de Nieuw-Zeelandse 
 
 
 Eens gearriveerd, tijdens onze rondreis, hadden we toch het gevoel dat de tijd begon te dringen. Het geluk stond aan onze kant, we vonden twee bemeubelde huizen! Na een virtuele rondleiding via videocall beslisten we een huis te kiezen dichtbij het centrum van Blenheim. Het leek alles te hebben wat we nodig hadden. 
-Een klein stresske viel van onze schouders. Eenmaal aangekomen op het zuidereiland moesten we nog negen dagen in een airBnB logeren en daarna konden we eindelijk uitpakken. 
+Een klein stresske viel van onze schouders. Eenmaal aangekomen op het zuidereiland moesten we nog negen dagen in een airBnB logeren en daarna konden we eindelijk uitpakken.
 
 
 26 april was het zover, contract voor zes maanden tekenen, we waren gezet! Dachten we...
