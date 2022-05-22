@@ -16,34 +16,36 @@ title: Verse Kiwis in Nieuw Zeeland
 / Info
 %br
 %h3.pt3 Blog
-%section.grid-row.grid-row--center
+%section
   / Cabin
   - blog.articles.each_with_index do |article, index|
     - left = (index % 2 == 0)
     - if left
-      .grid-column.span-half.pt3.pb3.mobile-m.order-1
-        .relative
-          - if article.data.image
-            = link_to article do
-              = image_tag article.data.image, class: 'info-image relative z2 blog-image', alt: article.data.title
-              .pattern.pattern--left-down.absolute.z1
-      .grid-column.span-half.pt3.pb3.mobile-m.order-2.pl1
-        = link_to article do
-          %h4=  article.data.title
-        %p= article.data.description
-        %br
-        %p= article.date.strftime('%e %b %Y')
+      .grid-row.grid-row--center
+        .grid-column.span-half.pt3.pb3.mobile-m.order-1
+          .relative
+            - if article.data.image
+              = link_to article do
+                = image_tag article.data.image, class: 'info-image relative z2 blog-image', alt: article.data.title
+                .pattern.pattern--left-down.absolute.z1
+        .grid-column.span-half.pt3.pb3.mobile-m.order-2.pl1
+          = link_to article do
+            %h4=  article.data.title
+          %p= article.data.description
+          %br
+          %p= article.date.strftime('%e %b %Y')
     - else
-      .grid-column.span-half.pt3.pb3.mobile-m.order-4
-        = link_to article do
-          %h4=  article.data.title
-        %p= article.data.description
-        %br
-        %p= article.date.strftime('%e %b %Y')
-      .grid-column.span-half.pt3.pb3.mobile-m.order-3.pr1
-        .relative
-          - if article.data.image
-            = link_to article do
-              = image_tag article.data.image, class: 'info-image relative z2 blog-image', alt: article.data.title
-              .pattern.pattern--right-middle.absolute.z1
+      .grid-row.grid-row--center
+        .grid-column.span-half.pt3.pb3.mobile-m.order-4
+          = link_to article do
+            %h4=  article.data.title
+          %p= article.data.description
+          %br
+          %p= article.date.strftime('%e %b %Y')
+        .grid-column.span-half.pt3.pb3.mobile-m.order-3.pr1
+          .relative
+            - if article.data.image
+              = link_to article do
+                = image_tag article.data.image, class: 'info-image relative z2 blog-image', alt: article.data.title
+                .pattern.pattern--right-middle.absolute.z1
 
