@@ -1,6 +1,20 @@
 = wrap_layout :layout do
   .blog
-    = yield
+    .container
+      .row
+        .title
+          %h3
+            = current_article.title
+      -# - if current_article.image
+      -#   .row
+      -#     .image
+      -#       %img{src: current_article.image }
+      .row.content
+        = yield
+      - if current_article.data.image
+        .row
+          .image
+            %img{src: current_article.data.image }
     .pt3
     = link_to "Terug", '/'
 
