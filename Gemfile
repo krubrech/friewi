@@ -4,6 +4,7 @@ gem 'middleman'
 gem 'middleman-autoprefixer'
 gem 'middleman-blog'
 gem 'middleman-livereload'
+gem 'builder'
 
 gem 'webrick'
 gem 'slim'

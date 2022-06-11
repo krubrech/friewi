@@ -13,6 +13,8 @@
     %link{:href => "/stylesheets/vendor/photoswipe.css", :rel => "stylesheet"}/
     / Web fonts
     %link{:href => "https://fonts.googleapis.com/css?family=Karla:400,700", :rel => "stylesheet"}/
+    %link{href: "#{url_for '/subscribe/feed.atom'}", rel: 'alternate', type:'application/atom+xml'}/
+    %link{href: "#{url_for '/subscribe/feed.rss'}", rel: 'alternate', type: 'application/rss+xml'}/
     / favicon.ico. Place these in the root directory.
     / %link{:href => "favicon.ico", :rel => "shortcut icon"}/
     / Scroll reveal
