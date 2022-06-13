@@ -7,9 +7,9 @@ image: /images/uploads/IMG_20220610_091217.jpg
 
 De nacht in Whariwharangi (in een oud boerderijtje) was dan wel een beetje griezelig, de dag begon voorspoedig en al snel stonden we op de top van de Gibbs Hill, de lokale heuvel. Steil maar gemakkelijk pad, ideaal om snel hoogtemeters te maken. Maar na de middag begon het echte werk. The Inland track met nodige waarschuwingen erbij bleek effectief wel voor gevorderden. Onze PLB (personal locator beacon) was dan toch niet overbodig. Ondanks de inkomende regenval konden we snel voortmaken. De DOC (department of conservation) ranger, die we onderweg op geiten zagen jagen, verzekerde ons dat het wel goed kwam. You'll be fine up there.
 
-De Awopoto hut heeft wellicht een prachtig zicht vanop de bergkam, maar nu was deze in een dikke mist gehuld. 's nachts begon de storm. Bliksem , 1 , 2 , donder. Deze schicht was dicht.
+De Awopoto hut heeft wellicht een prachtig zicht vanop de bergkam, maar nu was deze in een dikke mist gehuld. 's nachts begon de storm. Bliksem, 1 , 2 , donder. Deze schicht was dicht.
 
-S'ochtends vertrokken we met laatste voorspelling op zak. Het gure weer brak het vertrouwen, ondanks de beangstigende schoonheid van de omgeving. We waren 3 uur gestegen op de bergkam, en kwamen aan op het hoogste punt, maar moesten nog wel even verder voor we weer konden dalen. De sterke wind, de krakende bomen en de dreiging van slechter weer in aantocht volgens de voorspelling, gaven ons de doorslag. ..
+'s Ochtends vertrokken we met de laatste weersvoorspelling op zak. Het gure weer brak het vertrouwen, ondanks de beangstigende schoonheid van de omgeving. We waren 3 uur gestegen op de bergkam, en kwamen aan op het hoogste punt, maar moesten nog wel even verder voor we weer konden dalen. De sterke wind, de krakende bomen en de dreiging van slechter weer in aantocht volgens de voorspelling, gaven ons de doorslag...
 
 We wijken af van het origineel plan en dalen meteen af naar de andere kant tot de Wainui hut. Droog, maar koud en primitief. De open haard bracht weinig soelaas. In 2 dagen tijd hadden we enkel in dialoog met onszelf geweest. We bespreken de verdere opties om uit het park te geraken en het moraal zakt even tot een dieptepunt. Tot plots ... een schreeuw in de verte. Die komt dichterbij. Ik ga even buiten gaan kijken, midden vanuit het bos op de helling komt er een bende.
 
