@@ -10,7 +10,7 @@ title: Verse Kiwis in Nieuw Zeeland
         - width, height = FastImage.size(File.join(__dir__,upload.path))
         %figure
           %a{"data-pswp-height" => height, "data-pswp-width" => width, :href => upload.url, :target => "_blank"}
-            %img{:alt => "", :src => upload.url}/
+            %img{:alt => "", :src => upload.url, :loading => 'lazy'}/
 .pt1
   = link_to "Alle fotos ...", '/fotos'
 / Info

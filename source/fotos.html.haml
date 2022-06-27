@@ -4,7 +4,7 @@
       - width, height = FastImage.size(File.join(__dir__,upload.path))
       %figure
         %a{"data-pswp-height" => height, "data-pswp-width" => width, :href => upload.url, :target => "_blank"}
-          %img{:alt => "", :src => upload.url}/
+          %img{:alt => "", :src => upload.url, :loading => 'lazy'}/
 = link_to "Terug", '/'
 / Info
 
