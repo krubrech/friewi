@@ -1,6 +1,6 @@
 ---
 title: Beginnersfouten
-date: 2022-07-25T07:42:12.003Z
+date: 2022-07-25T04:23:18.893Z
 description: Don'ts voor weekendjes in Nieuw Zeeland
 image: /images/uploads/IMG_20220709_154422.jpg
 ---
