@@ -1,10 +1,24 @@
+- month ||= { year: Date.today.year, month: Date.today.month }
+
+- if month[:label]
+  %h1= month[:label]
+
 %section
   #gallery
     - sitemap.resources.select { |upload| upload.path.start_with?("images/uploads/") }.reverse.each_with_index do |upload|
       - width, height = FastImage.size(File.join(__dir__,upload.path))
-      %figure
-        %a{"data-pswp-height" => height, "data-pswp-width" => width, :href => upload.url, :target => "_blank"}
-          %img{:alt => "", :src => upload.url, :loading => 'lazy'}/
-= link_to "Terug", '/'
-/ Info
+      - date = EXIFR::JPEG.new(File.join(__dir__,upload.path)).date_time
+      - if date && ((date.month == month[:month]) && (date.year == month[:year]))
+        %figure
+          %a{"data-pswp-height" => height, "data-pswp-width" => width, :href => upload.url, :target => "_blank"}
+            %img{:alt => "", :src => upload.url, :loading => 'lazy'}/
+  - if month[:label]
+    = link_to "Terug", '/fotos'
+  - else
+    = link_to "Terug", '/'
+
+- config[:all_months].each_with_index do |month, index|
+  %span= link_to month[:label], "/fotos/#{month[:param]}"
+  - unless index == config[:all_months].size
+    %span= " - "
 

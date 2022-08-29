@@ -1,5 +1,6 @@
 #Bootstrap is used to style bits of the demo. Remove it from the config, gemfile and stylesheets to stop using bootstrap
 require "uglifier"
+require "exifr/jpeg"
 
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
@@ -23,6 +24,19 @@ activate :blog do |blog|
   blog.sources = "posts/{title}.html"
   blog.layout = "blog"
 end
+
+month_labels = ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december']
+
+start_date = Date.new(2022, 5, 1)
+date = Date.today
+
+all_months = (start_date..date).map { |d| { year: d.year, month: d.month } }.uniq.map { |val| val.merge(param: "#{month_labels[val[:month] - 1]}-#{val[:year]}", label: "#{month_labels[val[:month] - 1]} #{val[:year]}") }
+
+all_months.each do |month|
+  proxy "fotos/#{month[:param]}.html", "fotos.html", locals: { month: month }
+end
+
+config[:all_months] = all_months.reverse
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
