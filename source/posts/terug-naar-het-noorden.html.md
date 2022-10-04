@@ -1,6 +1,6 @@
 ---
 title: Noord vs Zuid
-date: 2022-10-4T23:45:17.917Z
+date: 2022-10-04T04:27:03.020Z
 description: En de geboorte van Domino of zo
 image: /images/uploads/domino_of_zo.jpeg
 ---
