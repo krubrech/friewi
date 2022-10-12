@@ -15,8 +15,8 @@ Op het avondmenu: Yams: dat zijn wortelknollen waarvan de smaak heel vergelijkba
 
 De volgende dag hebben we met trots onze regio getoond, het was leuk om bij de lunch tussen de wijnvelden de video van het moment te mogen zien in avant premiere.
 
-Een korte wandeling bij Havelock en het blitsbezoek was alweer voorbij. Binnen 2 weken zien we elkaar terug, maar dan brengen ze nog extra volk mee :grinning:.
-
+Een korte wandeling bij Havelock en het blitsbezoek was alweer voorbij. Binnen 2 weken zien we elkaar terug, maar dan brengen ze nog extra volk mee 😀!!
+..
 
 
 
