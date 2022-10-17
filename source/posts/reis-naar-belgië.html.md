@@ -1,5 +1,5 @@
 ---
-title: Reis naar België
+title: Ik heb getwijfeld over België
 date: 2022-10-17T06:11:28.722Z
 description: een tripje naar het exotische België
 image: /images/uploads/whatsapp-image-2022-09-12-at-04.54.36.jpeg
