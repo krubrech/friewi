@@ -1,8 +1,8 @@
 ---
-title: "De zomervakantie"
-date: 2022-05-22T23:45:17.917Z
-description: "Avontuur op een intense reis"
-image: /images/uploads/IMG_20220519_165651.jpg
+title: De zomervakantie
+date: 2023-01-31T01:49:59.816Z
+description: Avontuur op een intense reis
+image: /images/uploads/IMG_20221219_121328.jpg
 ---
 
 De zomervakantie is ondertussen al 3 weken achter de rug, maar toch even tijd nodig gehad om het allemaal te verwerken. Het was een reis naar het uiterste zuiden van Nieuw-Zeeland inclusief overstap naar Stewart Island.
@@ -13,7 +13,7 @@ Enkele boxen moesten nog worden gecheckt: Een kiwi zien in het wild! Yes. (Iets 
 
 Ondertussen pikten we ook nog het spelletje disk golf op. (Met frisbees op een golfterrein naar een mand gooien) En af en toe konden we Gunther ook overtuigen om te wandelen als het niet was om een frisbee uit een boom te halen. we bereikten de top van Gertrude saddle.
 
-Af en toe moest ik het teveel aan energie nog kwijt door een lang loopje, zo heb ik toch de `Great walks` Routeburn, Rakiura en een stuk van de Keppler track kunnen afwerken.
+Af en toe moest ik het teveel aan energie nog kwijt door een lang loopje, zo heb ik toch de _*Great walks*_ Routeburn, Rakiura en een stuk van de Keppler track kunnen afwerken.
 
 De vele foto's gaan ons moeten helpen de herinneringen bij te houden, want op korte tijd is er heel veel gebeurd.
 
