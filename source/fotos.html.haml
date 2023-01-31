@@ -17,8 +17,9 @@
   - else
     = link_to "Terug", '/'
 
-- config[:all_months].each_with_index do |month, index|
-  %span= link_to month[:label], "/fotos/#{month[:param]}"
-  - unless index == config[:all_months].size
-    %span= " - "
+.pt1
+  - config[:all_months].each_with_index do |month, index|
+    %span= link_to month[:label], "/fotos/#{month[:param]}"
+    - unless index == (config[:all_months].size - 1)
+      %span= " - "
 

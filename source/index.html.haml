@@ -13,6 +13,12 @@ title: Verse Kiwis in Nieuw Zeeland
             %img{:alt => "", :src => upload.url, :loading => 'lazy'}/
 .pt1
   = link_to "Alle fotos ...", '/fotos'
+
+.pt1
+  - config[:all_months].each_with_index do |month, index|
+    %span= link_to month[:label], "/fotos/#{month[:param]}"
+    - unless index == (config[:all_months].size - 1)
+      %span= " - "
 / Info
 %br
 %h3.pt3 Blog

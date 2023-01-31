@@ -21,6 +21,8 @@ Kerst en nieuw hadden een speciale sfeer, die kwam maar niet door het zomergevoe
 
 Meer en meer krijgen we het gevoel dat er nog weinig plaatsen in het Zuidereiland waar we niet geweest zijn. Getuige ook de scratchmap die ik voor mijn verjaardag kreeg. Maar daarmee blijft toch het gevoel dat de schoonheid vaak zit in de kleine details en onbekende plekjes weg van de toeristische begane paden. Nieuw-Zeeland heeft zeker nog niet al haar geheimen prijs gegeven.
 
+Na onze doortocht zochten we bijvoorbeeld Matai Bay Hut in de sounds op met de zeekayak. Het weer was wat tricky, maar uiteindelijk kwamen we er goed door en kon Gunther zijn toch verderzetten op het Noordereiland.
+
 Het is uitkijken naar onze volgende bezoekers, want voor hen staat ook alweer een avontuur te wachten...
 
 
