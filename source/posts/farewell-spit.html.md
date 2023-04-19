@@ -1,8 +1,8 @@
 ---
 title: Farewell Spit
 date: 2023-04-19T11:13:29.991Z
-description: "Het afscheid is nabij "
-image: /images/uploads/20220401_010319.jpg
+description: "Het afscheid is nabij"
+image: /images/uploads/IMG_20230408_125642.jpg
 ---
 
 Gelegen op een prachtig wit strand keken ik en Sarah vol bewondering hoe een mini-eiland uit de oceaan opdoemt. Het eiland is overgroeid met groen. Een klein stroompje kan de rots net de status van schiereiland ontzeggen. De golven maken er een afslag en betreden een grot die over miljoenen jaren uit de rots is gebeiteld. Kinderen sandboarden van de duinen en koppeltjes kuieren in vrede over het zand. We keken elkaar aan en zeiden, als dezen van hierboven nu hier de poort tot de hemel niet in deze grot heeft gebouwd, dan heeft hij toch wel een serieuze kans gemist. Wharariki beach ligt dicht bij de Farewell Spit, een bestemming die we later op die dag aandeden. Symbolischer kan bijna niet, het was ook de plek waarop captain Cook zijn laatste keer de ogen op Nieuw-Zeeland liet vallen na zijn avonturen.
