@@ -1,7 +1,7 @@
 ---
 title: Farewell Spit
 date: 2023-04-19T11:13:29.991Z
-description: Het afscheid is nabij
+description: "Het afscheid is nabij "
 image: /images/uploads/20220401_010319.jpg
 ---
 
